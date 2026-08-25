@@ -1,0 +1,17 @@
+p.error{
+  color: red;
+}
+p.sucsess{
+  color: green;
+}
+p.sucsess.feedback{
+  border: 1px dashed green;
+}
+
+#content {/* # is id */
+  background-color: #ebebeb;
+  padding: 20px;
+}
+div p{
+  color: purple;
+}

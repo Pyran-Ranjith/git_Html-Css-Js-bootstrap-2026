@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <title>03 HTML Forms</title>
+  </head>
+  <body>
+    <h1>HTML Forms</h1>
+    <form>
+      <label for="username">Enter username:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Enter your name"
+        required
+      />
+      <br /><br />
+      <label for="email">Enter email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+
+      <br /><br />
+
+      <label for="password">Enter password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter your password"
+        required
+      />
+
+      <!-- Radio button -->
+      <p>Select your age:</p>
+      <input type="radio" name="age" value="0-25" id="option-1" />
+      <label for="option-1">0-25</label>
+      <input type="radio" name="age" value="26-50" id="option-2" />
+      <label for="option-2">26-50</label>
+      <input type="radio" name="age" value="51+" id="option-3" />
+      <label for="option-3">51+</label>
+
+      <br /><br />
+
+      <!-- Dropdown box -->
+      <label for="quesion">Security quesion:</label>
+      <select name="question" id="question">
+        <option value="q1">What color are your faviourite pir of socks?</option>
+        <option value="q2">If you could be a vegitable, what it be?</option>
+        <option value="q3">What is your best ever security question?</option>
+      </select>
+
+      <br /><br />
+
+      <label for="answer">Security question answer:</label>
+      <input
+        type="text"
+        id="answer"
+        name="answer"
+        placeholder="Enter your answer"
+      />
+
+      <br /><br />
+
+      <label for="bio">Your bio:</label><br />
+      <textarea
+        name="bio"
+        id="bio"
+        cols="30"
+        rows="10"
+        /* placeholder="about you..." not working */
+      >
+      </textarea>
+
+      <br /><br/>
+
+      <input type="submit" value="Submit the form" />
+
+    </form>
+  </body>
+</html>

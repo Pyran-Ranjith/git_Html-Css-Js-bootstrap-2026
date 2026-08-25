@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- <link rel="stylesheet" href="styles-try.css" /> -->
+    <title>Lession-08 Marioclub - Try</title>
+    <style>
+      /* Can only style the whole h2 */
+      h2 {
+        /* whole h2  is red */
+        color: blue;
+      }
+      span {
+        color: red;
+      } /* Now only Marioclub is red */
+
+      .header {
+        /* style the h1 inside the header class */
+        background-color: #f63232; /* red background */
+        padding: 20px 0; /* padding top and bottom 20px */
+        text-align: center; /* center the text */
+        /* position: fixed (no effect on window resizing)*/
+        position: fixed; /* make it fixed */
+        width: 100%; /* make it full width */
+        z-index: 1; /* make sure it is on top of other elements */
+        top: 0; /* position from the top of the window */
+        left: 0; /* position from the left of the window */
+      }
+
+      header h1{
+    color: white; /* make the text white */
+    border: 8px solid white; /* add a white border */
+    padding: 6px 12px; /* add padding inside the border */
+    display: inline-block;
+    /* make the h1 inline-block so that the border is around the text */
+      border-radius: 36px; /* make the border rounded */
+  }
+.banner{
+    position: relative;
+}
+.banner img{
+    max-width: 100%;
+}
+.banner .welcome{
+    background-color: #feb614;
+    color: white;
+    padding: 30px;
+    position: absolute;
+    left: 0;
+    top: 30%;
+}
+.banner h2{
+    font-size: 74px;
+}
+.banner h2 span{
+    font-size: 1.3em;
+}
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Lession-08 Marioclub - Try</h1>
+    </header>
+    <section class="banner">
+      <img src="../img/banner.png" alt="Marioclub welcome banner" />
+      <div class="welcome">
+        <h2>Welcome to <br /><span>Marioclub</span></h2>
+      </div>
+    </section>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="join.html" class="join">Join the club</a></li>
+        <li><a href="/news.html">Latus news</a></li>
+        <li><a href="/games.html">New games</a></li>
+        <li><a href="/games.html">New games</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <article>
+        <h2>It's me, Mario</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          voluptatum, quod, quia, voluptates quibusdam voluptatibus voluptatibus
+        </p>
+      </article>
+      <ul>
+        <img src="../img/thumb-1.png" alt="Mario thumb-1" />
+        <img src="../img/thumb-2.png" alt="Mario thumb-2" />
+      </ul>
+    </main>
+
+    <section class="join">
+      <h2>Join today</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptate
+        dicta sit labore iste maxime dolorem obcaecati ipsum ex! Iusto nobis et
+        rem pariatur ex exercitationem totam neque perspiciatis placeat.
+      </p>
+      <form>
+        <input
+          type="email"
+          name="email"
+          placeholder="Type email & hit enter"
+          required
+        />
+        <button type="submit">Subscribe</button>
+      </form>
+      <footer>
+        <p class="copyright">Copyright &copy; 2026 Marioclub</p>
+      </footer>
+    </section>
+  </body>
+</html>
