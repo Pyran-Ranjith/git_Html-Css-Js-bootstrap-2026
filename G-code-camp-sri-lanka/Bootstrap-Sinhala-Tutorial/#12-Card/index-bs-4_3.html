@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>#12-Card</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Card</h1>
+      <br />
+
+      <h2>Card Example</h2>
+      <p>
+        Cards are built with as little markup and styles as possible, but still
+        manage to deliver a ton of control and customization. Built with
+        flexbox, they offer easy alignment and mix well with other Bootstrap
+        components. They have no margin by default, so use spacing utilities as
+        needed. Below is an example of a basic card with mixed content and a
+        fixed width. Cards have no fixed width to start, so they’ll naturally
+        fill the full width of its parent element. This is easily customized
+        with our various sizing options. Card title
+      </p>
+
+      <div class="card" style="width: 18rem">
+        <img
+          src="img/autumn-1246856_1280.jpg"
+          class="card-img-top"
+          alt="autumn"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <hr />
+
+      <h2>Body</h2>
+      <p>The building block of a card is the .card-body. Use it whenever you need a padded section within a card.
+      </p>
+      <div class="card">
+        <div class="card-body">
+          This is some text within a card body.
+        </div>
+      </div>
+      <hr />
+
+      <h2>Titles, text, and links</h2>
+      <p>
+        Card titles are used by adding .card-title to a <h*> tag. In the same way, links are added and placed next to each other by adding .card-link to an <a> tag.
+        Subtitles are used by adding a .card-subtitle to a <h*> tag. If the .card-title and the .card-subtitle items are placed in a .card-body item, the card title and subtitle are aligned nicely.
+      </p>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+      <hr />
+
+      <h2>Images</h2>
+      <p>
+        .card-img-top places an image to the top of the card. With .card-text, text can be added to the card. Text within .card-text can also be styled with the standard HTML tags.
+        Some quick example text to build
+      </p>
+      <div class="card" style="width: 18rem;">
+        <img
+          src="img/autumn-1246856_1280.jpg"
+          class="card-img-top"
+          alt="autumn"
+        />
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <hr />
+
+      <h2>Card image overlay</h2>
+      <p>
+      </p>
+      <div class="card bg-dark text-white" style="width: 36rem;">
+        <img
+          src="img/water-1246669_1280.jpg"
+          class="card-img"
+          alt="water"
+        />
+        <div class="card-img-overlay">
+          <h5 class="card-title">card-title: Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text">p-card-text: Last updated 3 mins ago</p>
+        </div>
+        <div class="card-body">
+          <p class="card-text">card-body: Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+      <hr />
+
+      <h2>Card Styles / Background Color</h2>
+      <p>
+      </p>
+      <div class="card bg-primary text-white" style="width: 36rem;">
+				<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+					<div class="card-header">Header</div>
+					<div class="card-body">
+						<h5 class="card-title">Primary card title</h5>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					</div>
+				</div>
+      </div>
+      <hr />
+
+      <h2>Card Group with Footer auto align</h2>
+			<div class="card-group">
+				<div class="card">
+					<img src="img/book-2363912_1280.jpg" class="card-img-top" alt="book">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</div>
+					<div class="card-footer">
+						<small class="text-muted">Last updated 3 mins ago</small>
+					</div>
+				</div>
+				<div class="card">
+					<img src="img/water-1246669_1280.jpg" class="card-img-top" alt="water">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+					</div>
+					<div class="card-footer">
+						<small class="text-muted">Last updated 3 mins ago</small>
+					</div>
+				</div>
+				<div class="card">
+					<img src="img/hiking-1246836_1280.jpg" class="card-img-top" alt="hiking">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+					</div>
+					<div class="card-footer">
+						<small class="text-muted">Last updated 3 mins ago</small>
+					</div>
+				</div>
+			</div>
+      <hr />
+
+      <h2>Card Deck with Footer auto align</h2>
+			<div class="card-deck">
+				<div class="card">
+					<img src="img/book-2363912_1280.jpg" class="card-img-top" alt="book">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</div>
+					<div class="card-footer">
+						<small class="text-muted">Last updated 3 mins ago</small>
+					</div>
+				</div>
+				<div class="card">
+					<img src="img/water-1246669_1280.jpg" class="card-img-top" alt="water">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+					</div>
+					<div class="card-footer">
+						<small class="text-muted">Last updated 3 mins ago</small>
+					</div>
+				</div>
+				<div class="card">
+					<img src="img/hiking-1246836_1280.jpg" class="card-img-top" alt="hiking">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+					</div>
+					<div class="card-footer">
+						<small class="text-muted">Last updated 3 mins ago</small>
+					</div>
+				</div>
+			</div>
+      <hr />
+
+      <!-- // class container -->
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>#10-Modal</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container mb-5">
+      <!-- intro section -->
+      <div class="jumbotron text-center">
+        <h1 class="display-4 text-primary">Welcome to Code Camp Sri Lanka</h1>
+        <h5 class="text-success">Tutor : Sahan Pasindu Nirmal</h5>
+        <p class="lead">Bootstrap සිංහලෙන් #10</p>
+        <hr class="my-2" />
+        <p>We code from Zero</p>
+        <hr class="my-2" />
+        <h1>Today Topic - Modals</h1>
+        <p>
+          Use Bootstrap's JavaScript modal plugin to add dialogs to your site
+          for lightboxes, user notifications, or completely custom content.
+        </p>
+        <hr />
+      </div>
+      <!-- //intro section -->
+
+      <h2>Basic Modal</h2>
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#BasicModal"
+      >
+        Basic Modal
+      </button>
+      <hr />
+
+      <h2>Basic Modal Scroll</h2>
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#BasicModalScroll"
+      >
+        Basic Modal Scroll
+      </button>
+      <hr />
+      <!-- // container mt-5 -->
+    </div>
+
+    <!-- 1. Basic Modal -->
+    <div class="modal fade" id="BasicModal" tabindex="-1" aria-labelledby="BasicModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="BasicModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <p>
+              Cras mattis consectetur purus sit amet fermentum. Cras justo
+              odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
+              risus, porta ac consectetur ac, vestibulum at eros. Praesent
+              commodo cursus magna, vel scelerisque nisl consectetur et.
+              Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+              auctor.
+            </p>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              Save changes
+            </button>
+          </div>
+        </div>
+        <!-- // modal-content -->
+      </div>
+      <!-- // modal-dialog -->
+    </div>
+    <!-- // Basic Modal -->
+
+    <!-- 2. Basic Modal Scroll -->
+    <div class="modal fade" id="BasicModalScroll" tabindex="-1" aria-labelledby="BasicModalScrollLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="BasicModalScrollLabel">Modal Scroll</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              Save changes
+            </button>
+          </div>
+        </div>
+        <!-- // modal-content -->
+      </div>
+      <!-- // modal-dialog -->
+    </div>
+    <!-- // Basic Modal Scroll -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
